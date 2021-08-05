@@ -20,9 +20,9 @@ class OrangeMoneySdk
 	public $notif_token;
 
 	
-	function __construct($clientId, $clientSecret, $options)
+	function __construct($options)
 	{
-		$this->token = new TokenRequest($clientId, $clientSecret);
+		$this->token = new TokenRequest($options['clientId'], $options['clientSecret']);
 
 		$this->token = $this->token->getToken();
 

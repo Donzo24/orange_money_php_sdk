@@ -13,10 +13,12 @@ composer require youssouf/orange_money_php_sdk
 ## Usage
 
 ```php
-import foobar
+use Donzo24\OrangeMoneySdk\OrangeMoneySdk;
 
 # returns 'object'
-$om = new OrangeMoneySdk("twywyywywyywyyw", "gsgssjsjjsjsj", [
+$om = new OrangeMoneySdk([
+	'clientId' => "twywyywywyywyyw",
+	'clientSecret' => "gsgssjsjjsjsj",
 	'merchant_key' => "key",
 	'currency' => "OUV",
 	'lang' => 'fr',
