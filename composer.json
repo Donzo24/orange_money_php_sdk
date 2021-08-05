@@ -3,7 +3,7 @@
     "description": "Orange money PHP SDK",
     "type": "library",
     "require": {
-        "guzzlehttp/guzzle": "7.4.x-dev"
+        "guzzlehttp/guzzle": "^6.0"
     },
     "license": "MIT",
     "authors": [
