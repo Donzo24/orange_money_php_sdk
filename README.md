@@ -1,16 +1,16 @@
-$om = new OrangeMoneySdk("aqikOGG7eLl1LcbF8mlhMf2D1wML08hS", "TuBBAhHYCHqV8zuG", [
-	'merchant_key' => "fd271bc4",
+$om = new OrangeMoneySdk("twywyywywyywyyw", "gsgssjsjjsjsj", [
+	'merchant_key' => "",
 	'currency' => "OUV",
 	'lang' => 'fr',
-	'reference' => "Bembeya"
+	'reference' => "Compagny Name"
 ]);
 
 $response = $om->webPaymentTransactionInit([
 	'order_id' => "72626272723", 
 	'amount' => "20000", 
-	'notif_url' => "http://bembeya.org", 
-	'return_url' => "https://bembeya.org",
-	'cancel_url' => "https://bembeya.org",
+	'notif_url' => "", 
+	'return_url' => "",
+	'cancel_url' => "",
 ]);
 
 if ($response) {
