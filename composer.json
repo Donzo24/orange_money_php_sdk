@@ -1,0 +1,21 @@
+{
+    "name": "youssouf/orange_money_php_sdk",
+    "description": "Orange money PHP SDK",
+    "type": "library",
+    "require": {
+        "guzzlehttp/guzzle": "7.4.x-dev"
+    },
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "Youssouf Donzo",
+            "email": "Donzoyoussouf@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Donzo24\\OrangeMoneySdk\\": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
