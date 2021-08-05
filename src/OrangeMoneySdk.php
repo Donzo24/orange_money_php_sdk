@@ -1,7 +1,7 @@
 <?php
 namespace Donzo24\OrangeMoneySdk;
 
-require('vendor/autoload.php');
+//require('vendor/autoload.php');
 
 use Donzo24\OrangeMoneySdk\{TokenRequest, HttpRequest};
 
