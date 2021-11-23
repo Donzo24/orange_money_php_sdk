@@ -17,12 +17,13 @@ use Donzo24\OrangeMoneySdk\OrangeMoneySdk;
 
 # returns 'object'
 $om = new OrangeMoneySdk([
-	'clientId' => "twywyywywyywyyw",
-	'clientSecret' => "gsgssjsjjsjsj",
+	'clientId' => "clientId",
+	'clientSecret' => "clientSecret",
 	'merchant_key' => "key",
 	'currency' => "OUV",
 	'lang' => 'fr',
-	'reference' => "Compagny Name"
+	'reference' => "Compagny Name",
+	'production' => "true|false"
 ]);
 
 # returns 'bool'

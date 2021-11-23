@@ -18,6 +18,7 @@ class OrangeMoneySdk
 	public $pay_token;
 	public $payment_url;
 	public $notif_token;
+	public $base_url = "https://api.orange.com/";
 
 	
 	function __construct($options)
@@ -26,7 +27,13 @@ class OrangeMoneySdk
 
 		$this->token = $this->token->getToken();
 
-		$this->http = new HttpRequest("https://api.orange.com/orange-money-webpay/dev/v1/webpayment");
+		$url = "{$this->base_url}orange-money-webpay/dev/v1/webpayment";
+
+		if (isset($options['production']) AND $options['production'] == true) {
+			$url = "{$this->base_url}orange-money-webpay/gn/v1/webpayment";
+		}
+
+		$this->http = new HttpRequest($url);
 
 		$this->merchant_key = $options['merchant_key'];
 		$this->currency = $options['currency'];
